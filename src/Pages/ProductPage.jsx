@@ -6,7 +6,7 @@ function ProductPage() {
     const [product, setProduct] = useState([]);
 
     useEffect(()=>{
-        const url = "/mobile-world/products";
+        const url = "https://mobile-world-app.herokuapp.com/mobile-world/products";
 
         fetch(url).then(response=>{
             response.json().then(json=>{

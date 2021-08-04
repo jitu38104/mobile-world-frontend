@@ -8,7 +8,7 @@ function CartItem(props){
     const { cart, setCart } = useContext(cartContext);
 
     useEffect(()=>{
-        const url = `/mobile-world/single-product/${props.Id}`;
+        const url = `https://mobile-world-app.herokuapp.com/mobile-world/single-product/${props.Id}`;
         fetch(url).then(res=>{
             res.json().then(res=>{
                 setItemVal(res);

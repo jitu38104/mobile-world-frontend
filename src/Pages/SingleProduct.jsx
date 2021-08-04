@@ -12,7 +12,7 @@ function SingleProduct(){
     const [isAdded, setIsAdded] = useState(false);
 
     useEffect(() =>{        
-        const url = `/mobile-world/single-product/${params.id}`;
+        const url = `https://mobile-world-app.herokuapp.com/mobile-world/single-product/${params.id}`;
 
         fetch(url).then(res=>{
             res.json().then(res=>{
