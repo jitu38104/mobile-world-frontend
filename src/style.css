@@ -1,0 +1,284 @@
+:root {
+    --white: #FFFFFF;
+    --dark:  #000000;
+    --pink: #C39BD3;
+    --blue: #5DADE2;
+    --gray: #566573;
+    --red: #E74C3C;
+    --green: #73C6B6;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.logo-img i{
+    font-size: 3rem;
+}
+
+.logo-img a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--blue); 
+}
+
+.link-bar a{
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--blue);   
+}
+.link-bar a:hover{
+    color: var(--pink);
+}
+
+.link-bar .cart{
+    background-color: var(--pink);    
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    color: var(--white);
+    border-radius: 3rem;   
+    border: 1px solid transparent;  
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.link-bar .cart:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+    background-color: transparent;
+}
+
+.header-box{
+    margin-top: 2rem;
+    max-height: 400px;
+}
+
+.header-box .Mobile-logo img{
+    margin-right: -35rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-box .brand-name{
+    margin: auto 0 auto 4rem;
+}
+
+.header-box .brand-name h6{
+    font-size: 1.2rem;
+    color: var(--green);
+    margin-bottom: -0.2rem;
+}
+.header-box .brand-name h1{
+    font-size: 3rem;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+
+.header-box .brand-name button{
+    background-color: var(--pink);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 3rem; 
+    border: 1px solid transparent;  
+    transition: all .5s ease; 
+}
+
+.header-box .brand-name button:hover {
+    outline: none;
+    color: var(--pink);
+    background-color: var(--white);
+    border-color: var(--pink);
+}
+
+.prod-item{    
+    max-width: 13rem;
+    margin: 2rem;
+    padding: 1rem 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.prod-item img{
+    margin-left: -0.25rem;
+    object-fit: contain;
+}
+.prod-item a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--dark);
+}
+.prod-item .price-box{
+    max-width: 12rem;
+    margin: 0 auto;
+    color: var(--gray);
+}
+.prod-item .price-box span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.prod-item .price-box button{
+    background-color: var(--pink);    
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 3rem;   
+    transition: all .3s ease;
+}
+.prod-item .price-box button:hover{
+    color: var(--pink);
+    background-color: transparent;
+    border-color: 1px solid var(--pink)
+}
+
+
+/* footer part */
+.footer-box hr{
+    border: 2px dotted var(--gray);
+    border-top: none;
+    background-color: transparent;
+    margin-top: 3rem;
+}
+
+.footer-box .social-icons i{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: var(--blue);
+}
+
+.footer-box h6{
+    color: var(--gray);
+}
+
+/* product page */
+.single-container h1{
+    color: var(--pink);
+    margin-top: 2rem;
+}
+
+.prod-page .prod-detail{
+    margin-left: 2rem;
+}
+
+.prod-page .prod-detail button{
+    background-color: var(--pink);    
+    padding: .25rem 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 3rem;   
+    border: 1px solid transparent;
+    transition: all .2s ease;
+}
+.prod-page .prod-detail button:hover{
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    background-color: transparent;
+}
+
+.prod-page > button{
+    margin-left: 2rem;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--gray);
+    transition: all .3s ease;
+}
+.prod-page > button:hover{
+    color: var(--green);
+}
+
+.prod-page .prod-detail .written-detail h3{
+    margin-bottom: 1rem;
+    color: var(--pink);
+}
+.prod-page .prod-detail .written-detail h6{
+    margin-bottom: 2rem;
+    color: var(--gray);
+}
+
+/* page not found*/
+.error-box{
+    height: 410px;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+    color: var(--red);
+}
+.error-actions {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.error-actions .btn { 
+    margin-right:10px; 
+}
+
+/* cart page */
+.cart-container .grand-total-box h5{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.cart-container .order-btn{
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 2rem;
+}
+
+.cart-container .order-btn:hover{
+    background-color: transparent;
+    color: var(--green);
+}
+
+.blank-box img{    
+    width: 100%;
+    max-height: 35rem;
+    object-fit: contain;
+}
+
+.cart-box h5{
+    font-size: 0.9rem;
+    font-weight: 500;    
+}
+
+.cart-box .control-panel button{
+    padding: 0 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+.cart-box .control-panel button:hover{
+    color: var(--blue);
+    background-color: transparent;    
+}
+
+.cart-box .del-btn button{
+    padding: 0 1.5rem;    
+    border-radius: 1.3rem;
+    color: var(--white);
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
+.cart-box .del-btn button:hover{
+    color: var(--red);
+    background-color: transparent;    
+}
+
+.cart-box .cart-img-box{
+    max-width: 10.7rem;
+}
+
+
+
